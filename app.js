@@ -1,6 +1,8 @@
 import { router } from './router.js';
 
 window.addEventListener('DOMContentLoaded', () => {
+  console.log('app.js');
+  console.log('DOMContentLoaded');
   router();
 
   document.body.addEventListener('click', (e) => {

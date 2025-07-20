@@ -1,4 +1,6 @@
 export async function loadUnityGame(containerId, basePath) {
+  console.log('loadUnityGame');
+
   const container = document.getElementById(containerId);
 
   const loaderUrl = `${basePath}/Build/UnityLoader.js`;
@@ -6,9 +8,15 @@ export async function loadUnityGame(containerId, basePath) {
 
   await loadScript(loaderUrl);
 
+  console.log(configUrl);
+  console.log(loaderUrl);
+
   fetch(configUrl)
     .then(response => response.json())
     .then(config => {
+      console.log('config');
+      console.log(config);
+
       createUnityInstance(container, {
         dataUrl: `${basePath}/Build/${config.dataUrl}`,
         frameworkUrl: `${basePath}/Build/${config.frameworkUrl}`,

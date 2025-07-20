@@ -1,6 +1,7 @@
 import { loadUnityGame } from './unity-loader.js';
 
 export async function router() {
+  console.log('router.js');
   const app = document.getElementById('app');
   const path = window.location.pathname;
 

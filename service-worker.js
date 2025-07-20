@@ -22,4 +22,4 @@ self.addEventListener('fetch', (event) => {
   );
 });
 
-// pwa
+// v0.01

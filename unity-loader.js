@@ -17,6 +17,12 @@ export async function loadUnityGame(containerId, basePath) {
       console.log('config');
       console.log(config);
 
+      console.log('container');
+      console.log(container);
+      console.log(`${basePath}/Build/${config.dataUrl}`);
+      console.log(`${basePath}/Build/${config.frameworkUrl}`);
+      console.log(`${basePath}/Build/${config.codeUrl}`);
+
       createUnityInstance(container, {
         dataUrl: `${basePath}/Build/${config.dataUrl}`,
         frameworkUrl: `${basePath}/Build/${config.frameworkUrl}`,

@@ -6,6 +6,8 @@ export async function router() {
   const app = document.getElementById('app');
   const path = window.location.pathname;
 
+  console.log('root');
+  console.log(root);
   console.log('path');
   console.log(path);
 

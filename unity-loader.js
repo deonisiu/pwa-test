@@ -6,10 +6,10 @@ export async function loadUnityGame(containerId, basePath) {
   const loaderUrl = `${basePath}/Build/UnityLoader.js`;
   const configUrl = `${basePath}/Build/build.json`;
 
-  await loadScript(loaderUrl);
-
   console.log(configUrl);
   console.log(loaderUrl);
+
+  await loadScript(loaderUrl);
 
   fetch(configUrl)
     .then(response => response.json())

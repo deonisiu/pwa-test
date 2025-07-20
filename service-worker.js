@@ -25,4 +25,4 @@ self.addEventListener('fetch', (event) => {
   );
 });
 
-// v0.03
+// v0.04

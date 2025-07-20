@@ -1,4 +1,7 @@
 self.addEventListener('install', (event) => {
+
+  self.skipWaiting(); // сразу активирует SW
+
   event.waitUntil(
     caches.open('unity-pwa-v1').then(cache =>
       cache.addAll([

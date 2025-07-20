@@ -1,0 +1,10 @@
+{
+  "companyName": "YourCompany",
+  "productName": "MyUnityGame",
+  "productVersion": "1.0",
+  "dataUrl": "game1.data.unityweb",
+  "wasmCodeUrl": "game1.wasm.unityweb",
+  "wasmFrameworkUrl": "game1.framework.js.unityweb",
+  "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+  "unityVersion": "2022.3.10f1"
+}

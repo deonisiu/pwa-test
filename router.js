@@ -15,7 +15,7 @@ export async function router() {
     app.innerHTML = '<p>Добро пожаловать в PWA v0.1! Выберите игру в меню.</p>';
   } else if (path === root + 'game1') {
     app.innerHTML = '<div id="unityContainer" style="width: 100%; height: 600px;"></div>';
-    await loadUnityGame('unityContainer', '/unity-modules/game1');
+    await loadUnityGame('unityContainer', root+'unity-modules/game1');
   } else {
     app.innerHTML = '<p>404 — Страница не найдена</p>';
   }

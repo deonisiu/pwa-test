@@ -1,7 +1,9 @@
 export async function loadUnityGame(containerId, basePath) {
   console.log('loadUnityGame');
 
-  const container = document.getElementById(containerId);
+  console.log('containerId: '+containerId);
+
+  const container = document.querySelector("#"+containerId);
 
   const loaderUrl = `${basePath}/Build/UnityLoader.js`;
   const configUrl = `${basePath}/Build/build.json`;
